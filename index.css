@@ -1,0 +1,229 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family:cursive; 
+}
+
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size:  1.25em;}
+ul{list-style: none;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: crimson;
+}
+
+button:hover{
+    background-color: rgb(184, 27, 58);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(245, 245, 245)
+}
+
+
+header.logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: crimson;
+    font-size: 1.45em;
+}
+
+header.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: crimson;
+}
+
+#hero{
+    margin: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("image/niño\ naget.JPEG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#caida{
+    margin: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("image/caida\ playa.JPEG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#bailesito{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#bailesito h2{
+    margin-top: 0;
+}
+
+#bailesito .container{
+    padding: 150px 12px;
+}
+
+#bailesito p{
+    display: none;
+}
+
+#bailesito .carta{
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("image/baile80.JPEG");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("image/maicol\ yacson.JPEG");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("image/costillar.JPEG");
+}
+
+#agregando .container{
+    text-align: center;
+    padding: 90px 12px;
+}
+
+#agregando li{
+    margin: 12px 0px;
+    font-weight: bold;
+}
+
+#Quieres{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-color: rgb(30,30,30);
+}
+
+#footer{
+    background-color: rgb(230,230,230);
+}
+
+#footer p{
+    margin: 0px;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+#footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header.container{
+        flex-direction:row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0px;
+        padding-right: 20px;
+        justify-content: center;
+        justify-content: space-between;
+    }
+
+
+}
